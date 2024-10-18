@@ -27,6 +27,7 @@
         display: flex;
         flex-direction: column;
         align-items: center ;
+        margin-bottom: 6dvw;
     }
     
 }
@@ -112,6 +113,23 @@
   align-items: center;
   height: 100vh;
 }
+@media only screen and (max-width:1000px) {
+    .second{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: space-between;
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding-bottom: 60px;
+    }    
+}
 .third{
     display: flex;
     flex-direction: column;
@@ -194,7 +212,7 @@
     font-weight: 300;
     padding-right: 8px;    
 }
-@media (min-width:700px) {
+@media only screen and (min-width:1000px) {
     .third1 p {
         writing-mode: vertical-rl;
         transform: rotate(180deg);
@@ -211,8 +229,10 @@
     }
     .third0{
         width: 18vw;
+        margin: 4vw;
         border-radius: 1.7858vw;
         height: 42vw;
+        border-radius: 4vw;
     }
     .gif{  
         width: 100%;
@@ -289,16 +309,20 @@
    height:80%;
    align-items: start;
 }
-@media only screen and (max-width:800px){
-    .fourthright{
-        display: none;
+@media only screen and (max-width:1000px){
+    .fourth{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: fit-content;
     }
     .fourthleft h2{
         padding-bottom: 6vw;
-        font-size: 2.689vw;
+        font-size: 4vw;
     }
     .fourthleft h1{
         padding-top: 3.5vw;
-        font-size: 4vw;
+        font-size: 6vw;
     }
 }
